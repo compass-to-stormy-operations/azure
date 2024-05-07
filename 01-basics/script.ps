@@ -1,13 +1,10 @@
-# Scale an elastic pool in Azure SQL Database
+# Create basic resource group
 
 # Variable block
-let "randomIdentifier=$RANDOM*$RANDOM"
 location="East US"
-resourceGroup="msdocs-azuresql-rg-$randomIdentifier"
-tag="scale-pool"
-server="msdocs-azuresql-server-$randomIdentifier"
-database="msdocsazuresqldb$randomIdentifier"
-databaseAdditional="msdocs-azuresql-additional-db-$randomIdentifier"
-login="azureuser"
-password="Pa$$w0rD-$randomIdentifier"
-pool="msdocs-azuresql-pool-$randomIdentifier"
+resource-group="alpha-resource-group"
+
+echo "Using resource group $resource-group"
+
+echo "Creating $resource-group in $location..."
+az group create --name $resource-group --location "$location"
