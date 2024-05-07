@@ -1,0 +1,13 @@
+# Scale an elastic pool in Azure SQL Database
+
+# Variable block
+let "randomIdentifier=$RANDOM*$RANDOM"
+location="East US"
+resourceGroup="msdocs-azuresql-rg-$randomIdentifier"
+tag="scale-pool"
+server="msdocs-azuresql-server-$randomIdentifier"
+database="msdocsazuresqldb$randomIdentifier"
+databaseAdditional="msdocs-azuresql-additional-db-$randomIdentifier"
+login="azureuser"
+password="Pa$$w0rD-$randomIdentifier"
+pool="msdocs-azuresql-pool-$randomIdentifier"
