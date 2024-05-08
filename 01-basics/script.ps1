@@ -8,3 +8,6 @@ echo "Using resource group $resourceGroup"
 
 echo "Creating $resourceGroup in $location..."
 az group create --name $resourceGroup --location $location
+if ($? -eq $false) {
+    Write-Error "Error creating resource group $resourceGroup"
+}
