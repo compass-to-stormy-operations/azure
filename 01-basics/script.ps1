@@ -18,6 +18,6 @@ try {
     }
 } 
 catch {
-    Write-Error $PSItem.Exception.Message"
+    Write-Error $PSItem.Exception.Message
 }
 $ErrorActionPreference = "Continue"
