@@ -1,4 +1,4 @@
-# Create basic resource group
+# Create resource group + vnet + snet
 
 # Variable block
 $randomIdentifier = (New-Guid).ToString().Substring(0,8)
