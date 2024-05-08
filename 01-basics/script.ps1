@@ -2,8 +2,8 @@
 
 # Variable block
 $randomIdentifier = (New-Guid).ToString().Substring(0,8)
-$location="brazilsouth"
 $subscription="Free Tier"
+$location="brazilsouth"
 $resourceGroup="alpha-resource-group"
 
 echo "randomIdentifier=$randomIdentifier"
