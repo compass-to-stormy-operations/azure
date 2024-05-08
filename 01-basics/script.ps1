@@ -16,7 +16,8 @@ try {
     if ($? -eq $false) {
         throw 'Resource Group create failed.'
     }
-} catch {
+} 
+catch {
     Write-Error $PSItem.Exception.Message"
 }
 $ErrorActionPreference = "Continue"
