@@ -21,7 +21,7 @@ try {
 
     # Create a virtual network and subnet
     echo "Creating $vnetName -> $vnetAddressPrefix"
-    echo "Creating $subnetName -> subnetAddressPrefix"
+    echo "Creating $subnetName -> $subnetAddressPrefix"
     az network vnet create --name $vnetName `
       --resource-group $resourceGroup `
       --address-prefixes $vnetAddressPrefix `
