@@ -14,11 +14,10 @@ $ErrorActionPreference = "Stop"
 try {
     az group create --name $resourceGroup #--location $location --subscription $subscription
     if ($? -eq $false) {
-        Write-Output "Ran into an issue: $($PSItem.ToString())"
         throw 'Resource Group create failed.'
     }
 }
 catch {
-    Write-Error $PSItem.Exception.Message
+    Write-Error "$($PSItem.ToString()) <===> $PSItem.Exception.Message"
 }
 $ErrorActionPreference = "Continue"
