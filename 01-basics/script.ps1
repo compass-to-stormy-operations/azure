@@ -12,7 +12,7 @@ echo "Using resource group $resourceGroup"
 echo "Creating $resourceGroup in $location..."
 $ErrorActionPreference = "Stop"
 try {
-    az group create --name $resourceGroup --location $location --subscription $subscription
+    az group create --name $resourceGroup #--location $location --subscription $subscription
     if ($? -eq $false) {
         Write-Output "Ran into an issue: $($PSItem.ToString())"
         throw 'Resource Group create failed.'
