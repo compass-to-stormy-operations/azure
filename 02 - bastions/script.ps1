@@ -2,8 +2,6 @@
 
 # Variable block
 $randomIdentifier = (New-Guid).ToString().Substring(0,8)
-$subscription="Free Tier"
-$location="brazilsouth"
 $resourceGroup="alpha-resource-group"
 $vnetName="alpha-vnet"
 $bastionHost="alpha-vnet-bastion"
