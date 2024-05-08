@@ -15,7 +15,7 @@ try {
     echo "Creating Public IP $publicIpName"
     az network public-ip create `
         --resource-group $resourceGroup `
-        --name publicIpName
+        --name $publicIpName
     if ($? -eq $false) {
         throw 'public ip create failed.'
     }  
