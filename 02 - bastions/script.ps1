@@ -7,13 +7,18 @@ $location="brazilsouth"
 $resourceGroup="alpha-resource-group"
 $vnetName="alpha-vnet"
 $bastionHost=""alpha-bastion-host"
+$publicIpAddress="alpha-public-ip"
 
 $ErrorActionPreference = "Stop"
 try {
-    #create bastions
-
-    az network bastion create --location westus2 --name MyBastionHost --public-ip-address MyPublicIpAddress --resource-group MyResourceGroup --vnet-name MyVnet
-
+    # Create a bastion in virtual network
+    echo "Creating Bastion Host $bastionHost in $vnetName"
+    az network bastion create `
+        --location $location `
+        --name $bationHost `
+        --public-ip-address $publicIpAddress `
+        --resource-group resourceGroup `
+        --vnet-name $vnetName
     if ($? -eq $false) {
         throw 'virtual network and subnet create failed.'
     }      
