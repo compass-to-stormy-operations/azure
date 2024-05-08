@@ -15,12 +15,12 @@ try {
     echo "Creating Bastion Host $bastionHost in $vnetName"
     az network bastion create `
         --location $location `
-        --name $bationHost `
+        --name $bastionHost `
         --public-ip-address $publicIpAddress `
-        --resource-group resourceGroup `
+        --resource-group $resourceGroup `
         --vnet-name $vnetName
     if ($? -eq $false) {
-        throw 'virtual network and subnet create failed.'
+        throw 'bastion create failed.'
     }      
 } catch {
     Write-Error $PSItem.Exception.Message
