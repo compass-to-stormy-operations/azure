@@ -25,7 +25,7 @@ try {
     az network bastion create `
         --location $location `
         --name $bastionHost `
-        --public-ip-address $publicIpAddress `
+        --public-ip-address $publicIpName `
         --resource-group $resourceGroup `
         --vnet-name $vnetName
     if ($? -eq $false) {
