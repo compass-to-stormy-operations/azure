@@ -7,10 +7,19 @@ $location="brazilsouth"
 $resourceGroup="alpha-resource-group"
 $vnetName="alpha-vnet"
 $bastionHost="alpha-bastion-host"
-$publicIpAddress="alpha-public-ip"
+$publicIpName="alpha-public-ip"
 
 $ErrorActionPreference = "Stop"
 try {
+    # Create a public ip
+    echo "Creating Public IP $publicIpName"
+    az network public-ip create `
+        --resource-group $resourceGroup `
+        --name publicIpName
+    if ($? -eq $false) {
+        throw 'public ip create failed.'
+    }  
+
     # Create a bastion in virtual network
     echo "Creating Bastion Host $bastionHost in $vnetName"
     az network bastion create `
