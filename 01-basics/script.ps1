@@ -1,10 +1,12 @@
 # Create basic resource group
 
 # Variable block
+$randomIdentifier = (New-Guid).ToString().Substring(0,8)
 $location="brazilsouth"
 $subscription="Free Tier"
 $resourceGroup="alpha-resource-group"
 
+echo "randomIdentifier=$randomIdentifier"
 echo "Using resource group $resourceGroup"
 
 echo "Creating $resourceGroup in $location..."
