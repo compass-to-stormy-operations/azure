@@ -1,7 +1,7 @@
 # Create basic resource group
 
 # Variable block
-location="East US"
+location="brazilsouth"
 resource-group="alpha-resource-group"
 
 echo "Using resource group $resource-group"
