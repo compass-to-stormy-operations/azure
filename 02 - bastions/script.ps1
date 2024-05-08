@@ -6,8 +6,8 @@ $subscription="Free Tier"
 $location="brazilsouth"
 $resourceGroup="alpha-resource-group"
 $vnetName="alpha-vnet"
-$bastionHost="alpha-bastion-host"
-$publicIpName="alpha-public-ip"
+$bastionHost="alpha-vnet-bastion"
+$publicIpName="alpha-vnet-ip"
 
 $ErrorActionPreference = "Stop"
 try {
