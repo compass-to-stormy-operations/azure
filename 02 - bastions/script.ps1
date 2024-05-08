@@ -23,7 +23,6 @@ try {
     # Create a bastion in virtual network
     echo "Creating Bastion Host $bastionHost in $vnetName"
     az network bastion create `
-        --location $location `
         --name $bastionHost `
         --public-ip-address $publicIpName `
         --resource-group $resourceGroup `
