@@ -15,10 +15,10 @@ try {
     az group create --name $resourceGroup 
     #--location $location --subscription $subscription
     if ($? -eq $false) {
-        throw 'Group create failed.'
+        throw 'Resource Group create failed.'
     }
 }
 catch {
-    Write-Error "Error creating the resource group."
+    Write-Error $PSItem.InvocationInfo
 }
 $ErrorActionPreference = "Continue"
