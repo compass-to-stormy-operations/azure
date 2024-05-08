@@ -2,6 +2,7 @@
 
 # Variable block
 $randomIdentifier = (New-Guid).ToString().Substring(0,8)
+$location="brazilsouth"
 $resourceGroup="alpha-resource-group"
 $vnetName="alpha-vnet"
 $bastionHost="alpha-vnet-bastion"
@@ -24,7 +25,9 @@ try {
         --name $bastionHost `
         --public-ip-address $publicIpName `
         --resource-group $resourceGroup `
-        --vnet-name $vnetName
+        --vnet-name $vnetName `
+        --location $location `
+        --sku Basic
     if ($? -eq $false) {
         throw 'bastion create failed.'
     }      
