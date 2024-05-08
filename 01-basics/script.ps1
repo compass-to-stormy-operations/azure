@@ -19,6 +19,6 @@ try {
     }
 }
 catch {
-    Write-Error $PSItem.InvocationInfo
+    Write-Error $PSItem.Exception.Message
 }
 $ErrorActionPreference = "Continue"
