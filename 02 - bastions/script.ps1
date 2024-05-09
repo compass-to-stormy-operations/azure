@@ -6,7 +6,7 @@ $location="brazilsouth"
 $resourceGroup="alpha-resource-group"
 $vnetName="alpha-vnet"
 $subnetName="AzureBastionSubnet"
-$subnetAddressPrefix="10.1.1.0/26"
+$subnetAddressPrefixes="10.1.1.0/26"
 $bastionName="alpha-vnet-bastion"
 $publicIpName="alpha-vnet-ip"
 
@@ -18,7 +18,7 @@ try {
         --name $subnetName `
         --resource-group $resourceGroup `
         --vnet-name $vnetName ` 
-        --address-prefix $subnetAddressPrefix
+        --address-prefixes $subnetAddressPrefixes
     if ($? -eq $false) {
         throw 'bastion subnet create failed.'
     }  
