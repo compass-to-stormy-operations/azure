@@ -6,7 +6,7 @@ $subscription="Free Tier"
 $location="brazilsouth"
 $resourceGroup="alpha-resource-group"
 $vnetName="alpha-vnet"
-$subnetName = "alpha-snet"
+$subnetName = "alpha-subnet"
 $vnetAddressPrefix = "10.0.0.0/16"
 $subnetAddressPrefix = "10.0.0.0/24"
 
