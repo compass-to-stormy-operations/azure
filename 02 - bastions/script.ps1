@@ -16,8 +16,8 @@ try {
     echo "Creating bastion snet"
     az network vnet subnet create `
         --name $subnetName `
-        --vnet-name $vnetName ` 
         --resource-group $resourceGroup `
+        --vnet-name $vnetName ` 
         --address-prefix $subnetAddressPrefix
     if ($? -eq $false) {
         throw 'bastion subnet create failed.'
