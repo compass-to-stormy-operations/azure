@@ -14,7 +14,7 @@ $ErrorActionPreference = "Stop"
 try {
     # Create a bastion subnet
     echo "Creating bastion snet"
-    az network vnet subnet create 
+    az network vnet subnet create `
         --name $vnetName `
         --vnet-name $snetName ` 
         --resource-group $resourceGroup `
