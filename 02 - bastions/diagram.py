@@ -7,7 +7,7 @@ from diagrams.azure.network import PublicIpAddresses
 from diagrams.azure.general import Resource
 
 
-with Diagram("Diagram","diagram"):
+with Diagram("Diagram of script.ps1","diagram"):
     with Cluster("alpha-resource-groups"):
         PublicIpAddresses("alpha-vnet-ip")
         with Cluster("alpha-vnet"):
