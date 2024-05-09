@@ -14,7 +14,10 @@ $ErrorActionPreference = "Stop"
 try {
     #create a resource group
     echo "Creating $resourceGroup in $location..."
-    az group create --name $resourceGroup --location $location --subscription $subscription
+    az group create `
+        --name $resourceGroup `
+        --location $location `
+        --subscription $subscription
     if ($? -eq $false) {
         throw 'Resource Group create failed.'
     }
@@ -22,7 +25,8 @@ try {
     # Create a virtual network and subnet
     echo "Creating $vnetName -> $vnetAddressPrefix"
     echo "Creating $subnetName -> $subnetAddressPrefix"
-    az network vnet create --name $vnetName `
+    az network vnet create `
+      --name $vnetName `
       --resource-group $resourceGroup `
       --address-prefixes $vnetAddressPrefix `
       --subnet-name $subnetName `
