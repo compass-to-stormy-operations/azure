@@ -1,0 +1,10 @@
+digraph "Web Service" {
+	graph [fontcolor="#2D3436" fontname="Sans-Serif" fontsize=15 label="Web Service" nodesep=0.60 pad=2.0 rankdir=LR ranksep=0.75 splines=ortho]
+	node [fixedsize=true fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13 height=1.4 imagescale=true labelloc=b shape=box style=rounded width=1.4]
+	edge [color="#7B8894"]
+	ca0637eddbc743a5baab1738aadde442 [label=lb height=1.9 image="C:\Users\Heitor Rapcinski\AppData\Local\Programs\Python\Python311\Lib\site-packages\resources/aws/network\elastic-load-balancing.png" shape=none]
+	"854dd625cc0b44f3a93a68cdb6c758ca" [label=web height=1.9 image="C:\Users\Heitor Rapcinski\AppData\Local\Programs\Python\Python311\Lib\site-packages\resources/aws/compute\ec2.png" shape=none]
+	ca0637eddbc743a5baab1738aadde442 -> "854dd625cc0b44f3a93a68cdb6c758ca" [dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+	eabf6e36707b48c38a845f9a56cb0508 [label=userdb height=1.9 image="C:\Users\Heitor Rapcinski\AppData\Local\Programs\Python\Python311\Lib\site-packages\resources/aws/database\rds.png" shape=none]
+	"854dd625cc0b44f3a93a68cdb6c758ca" -> eabf6e36707b48c38a845f9a56cb0508 [dir=forward fontcolor="#2D3436" fontname="Sans-Serif" fontsize=13]
+}
