@@ -5,11 +5,24 @@ $randomIdentifier = (New-Guid).ToString().Substring(0,8)
 $location="brazilsouth"
 $resourceGroup="alpha-resource-group"
 $vnetName="alpha-vnet"
+$snetName="AzureBastionSubnet"
+$snetAddressPrefix="10.1.1.0/26"
 $bastionName="alpha-vnet-bastion"
 $publicIpName="alpha-vnet-ip"
 
 $ErrorActionPreference = "Stop"
 try {
+    # Create a bastion subnet
+    echo "Creating bastion snet"
+    az network vnet subnet create 
+        --name $vnetName `
+        --vnet-name $snetName ` 
+        --resource-group $resourceGroup `
+        --address-prefix $snetAddressPrefix
+    if ($? -eq $false) {
+        throw 'bastion subnet create failed.'
+    }  
+
     # Create a public ip
     echo "Creating Public IP $publicIpName"
     az network public-ip create `
