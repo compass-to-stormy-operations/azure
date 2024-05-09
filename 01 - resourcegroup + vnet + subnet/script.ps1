@@ -13,7 +13,7 @@ $subnetAddressPrefix = "10.0.0.0/24"
 $ErrorActionPreference = "Stop"
 try {
     #create a resource group
-    echo "Creating $resourceGroup in $location..."
+    Write-Output "Creating $resourceGroup in $location..."
     az group create `
         --name $resourceGroup `
         --location $location `
@@ -23,8 +23,8 @@ try {
     }
 
     # Create a virtual network and subnet
-    echo "Creating $vnetName -> $vnetAddressPrefix"
-    echo "Creating $subnetName -> $subnetAddressPrefix"
+    Write-Output "Creating $vnetName -> $vnetAddressPrefix"
+    Write-Output "Creating $subnetName -> $subnetAddressPrefix"
     az network vnet create `
       --name $vnetName `
       --resource-group $resourceGroup `
