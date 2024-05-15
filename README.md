@@ -26,7 +26,9 @@ cd azure
 .\CreateResourceGroup.ps1
 ```
 
-## Resource Group
+## Estrutura de Governaça e Rede
+
+### Resource Group
 
 [Visão Geral do Resource Group](https://learn.microsoft.com/pt-br/azure/azure-resource-manager/management/manage-resource-groups-portal) 
 
@@ -37,7 +39,7 @@ cd azure
 ./CreateResourceGroup.ps1
 ```
 
-## VNet e SubNet
+### VNet e SubNet
 
 [Visão Geral da VNet](https://learn.microsoft.com/pt-br/azure/virtual-network/virtual-networks-overview)
 
@@ -48,7 +50,7 @@ cd azure
 ./CreateVnetAndSubnet.ps1
 ```
 
-## Bastion
+### Bastion
 
 [Visão Geral do Bastion](https://learn.microsoft.com/pt-br/azure/bastion/bastion-overview)
 
