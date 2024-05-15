@@ -67,4 +67,13 @@ cd azure
 
 #### Criar Conta de Armazenamento
 
+[Visão Geral da Storage Account](https://learn.microsoft.com/pt-br/azure/storage/common/storage-account-overview)
+
+Para criar uma Conta de Armazenamento execute [CreateStorageAccount.ps1](./CreateStorageAccount.ps1)
+
+```
+cd azure
+./CreateStorageAccount.ps1
+```
+
 #### 
