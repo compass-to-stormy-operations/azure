@@ -2,6 +2,16 @@
 
 Esse repositório contém exemplos de utilização da Azure, a partir de scripts usando [Azure CLI](https://learn.microsoft.com/pt-br/cli/azure/).
 
+## Orientações Gerais
+
+Para usar o passo a passo desse tutorial sugerimos o uso do [Azure Cloud Shell](https://learn.microsoft.com/pt-br/azure/cloud-shell/overview) e executar os passos abaixo:
+
+### Baixar o repositório para seu ambiente
+
+```
+git clone 
+```
+
 ## Resource Group
 
 Um [Resource Group](https://learn.microsoft.com/pt-br/azure/azure-resource-manager/management/manage-resource-groups-portal) é um contêiner que mantém os recursos relacionados a uma solução do Azure. Abaixo você pode analisar um script para criação de um Resource Group.
