@@ -13,7 +13,7 @@ try {
     az storage account create `
       --name $storageAccountName `
       --resource-group $resourceGroup `
-      --sku Standard_RAGRS 
+      --sku $sku
     if ($? -eq $false) {
         throw 'bastion subnet create failed.'
     }  
