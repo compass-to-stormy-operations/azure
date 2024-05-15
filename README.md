@@ -30,16 +30,16 @@ cd azure
 
 [Visão Geral do Resource Group](https://learn.microsoft.com/pt-br/azure/azure-resource-manager/management/manage-resource-groups-portal) 
 
-[Criar Resource Group](./CreateResourceGroup.ps1) 
+Para criar Resource Group execute [CreateResourceGroup.ps1](./CreateResourceGroup.ps1) 
 
 ## VNet e SubNet
 
 [Visão Geral da VNet](https://learn.microsoft.com/pt-br/azure/virtual-network/virtual-networks-overview)
 
-[Criar uma VNet e SubNet](./CreateVnetAndSubnet.ps1) 
+Para criar uma VNet e SubNet execute [CreateVnetAndSubnet.ps1](./CreateVnetAndSubnet.ps1) 
 
 ## Bastion
 
 [Visão Geral do Bastion](https://learn.microsoft.com/pt-br/azure/bastion/bastion-overview)
 
-[Criar um Bastion](./CreateBastion.ps1)
+Para criar um Bastion execute [CreateBastion.ps1](./CreateBastion.ps1)
