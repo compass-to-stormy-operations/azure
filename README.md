@@ -19,7 +19,7 @@ cd azure
 git pull
 ```
 
-### Executar o Scrip
+### Executar o Script
 
 ```
 cd azure
