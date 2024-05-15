@@ -24,7 +24,7 @@ try {
         --name $subnetName `
         --resource-group $resourceGroup `
         --vnet-name $vnetName `
-        --address-prefixes $subnetAddressPrefixes
+        --address-prefixes $subnetAddressPrefix
     if ($? -eq $false) {
         throw 'subnet create failed.'
     } 
