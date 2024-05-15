@@ -2,7 +2,7 @@
 $uniqueId="alpha"
 $name="storageaccount"
 $random=Get-Random
-$storageAccountName="$uniqueId$name$random"
+$storageAccountName=$uniqueId+$name+$random
 $resourceGroup="$uniqueId-resource-group"
 $sku="Standard_LRS"
 
