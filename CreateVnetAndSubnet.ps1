@@ -1,27 +1,13 @@
-# Create resource group + vnet + snet
-
 # Variable block
-$randomIdentifier = (New-Guid).ToString().Substring(0,8)
-$subscription="Free Tier"
-$location="brazilsouth"
-$resourceGroup="alpha-resource-group"
-$vnetName="alpha-vnet"
-$subnetName = "alpha-subnet"
+$uniqueId="alpha"
+$resourceGroup="$uniqueId-resource-group"
+$vnetName="$uniqueId-vnet"
+$subnetName = "$uniqueId-subnet"
 $vnetAddressPrefix = "10.0.0.0/16"
 $subnetAddressPrefix = "10.0.0.0/24"
 
 $ErrorActionPreference = "Stop"
 try {
-    #create a resource group
-    Write-Output "Creating $resourceGroup in $location..."
-    az group create `
-        --name $resourceGroup `
-        --location $location `
-        --subscription $subscription
-    if ($? -eq $false) {
-        throw 'Resource Group create failed.'
-    }
-
     # Create a virtual network and subnet
     Write-Output "Creating $vnetName -> $vnetAddressPrefix"
     Write-Output "Creating $subnetName -> $subnetAddressPrefix"

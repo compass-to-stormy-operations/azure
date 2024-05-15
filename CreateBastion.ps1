@@ -1,13 +1,11 @@
-# Create bastions in vnet
-
 # Variable block
-$randomIdentifier = (New-Guid).ToString().Substring(0,8)
-$resourceGroup="alpha-resource-group"
-$vnetName="alpha-vnet"
+$uniqueId="alpha"
+$resourceGroup="$uniqueId-resource-group"
+$vnetName="$uniqueId-vnet"
 $subnetName="AzureBastionSubnet"
 $subnetAddressPrefixes="10.0.250.0/26"
-$bastionName="alpha-vnet-bastion"
-$publicIpName="alpha-vnet-ip"
+$bastionName="$uniqueId-vnet-bastion"
+$publicIpName="$uniqueId-vnet-ip"
 
 $ErrorActionPreference = "Stop"
 try {
