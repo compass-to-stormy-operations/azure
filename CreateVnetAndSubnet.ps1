@@ -13,7 +13,7 @@ try {
     az network vnet create `
       --name $vnetName `
       --resource-group $resourceGroup `
-      --address-prefixes $vnetAddressPrefix `
+      --address-prefixes $vnetAddressPrefix 
     if ($? -eq $false) {
         throw 'virtual network create failed.'
     }
