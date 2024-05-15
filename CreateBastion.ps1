@@ -35,7 +35,8 @@ try {
         --name $bastionName `
         --public-ip-address $publicIpName `
         --resource-group $resourceGroup `
-        --vnet-name $vnetName
+        --vnet-name $vnetName `
+        --sku Basic
     if ($? -eq $false) {
         throw 'bastion create failed.'
     }      
