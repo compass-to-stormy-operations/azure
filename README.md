@@ -28,11 +28,18 @@ cd azure
 
 ## Resource Group
 
-Um [Resource Group](https://learn.microsoft.com/pt-br/azure/azure-resource-manager/management/manage-resource-groups-portal) é um contêiner que mantém os recursos relacionados a uma solução do Azure. Abaixo você pode analisar um script para criação de um Resource Group.
+[Visão Geral do Resource Group](https://learn.microsoft.com/pt-br/azure/azure-resource-manager/management/manage-resource-groups-portal) 
 
 [Criar Resource Group](./CreateResourceGroup.ps1) 
 
 ## VNet e SubNet
 
+[Visão Geral da VNet](https://learn.microsoft.com/pt-br/azure/virtual-network/virtual-networks-overview)
+
+[Criar uma VNet e SubNet](./CreateVnetAndSubnet.ps1) 
 
 ## Bastion
+
+[Visão Geral do Bastion](https://learn.microsoft.com/pt-br/azure/bastion/bastion-overview)
+
+[Criar um Bastion](./CreateBastion.ps1)
