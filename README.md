@@ -9,7 +9,21 @@ Para usar o passo a passo desse tutorial sugerimos o uso do [Azure Cloud Shell](
 ### Baixar o repositório para seu ambiente
 
 ```
-git clone 
+git clone https://github.com/the-compass-to-stormy-operations/azure.git
+```
+
+ou atualizar
+
+```
+cd azure
+git pull
+```
+
+### Executar o Scrip
+
+```
+cd azure
+.\CreateResourceGroup.ps1
 ```
 
 ## Resource Group
