@@ -60,3 +60,11 @@ Para criar um Bastion execute [CreateBastion.ps1](./CreateBastion.ps1)
 cd azure
 ./CreateBastion.ps1
 ```
+
+## Serviços Gerenciados
+
+### Armazenamento
+
+#### Criar Conta de Armazenamento
+
+#### 
