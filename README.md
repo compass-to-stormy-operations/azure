@@ -2,6 +2,8 @@
 
 Esse repositório contém exemplos de utilização da Azure, a partir de scripts usando [Azure CLI](https://learn.microsoft.com/pt-br/cli/azure/).
 
+[Desenvolver sua estratégia de nomenclatura e marcação para recursos do Azure](https://learn.microsoft.com/pt-br/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging)
+
 ## Orientações Gerais
 
 Para usar o passo a passo desse tutorial sugerimos o uso do [Azure Cloud Shell](https://learn.microsoft.com/pt-br/azure/cloud-shell/overview) e executar os passos abaixo:
