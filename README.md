@@ -10,13 +10,13 @@ Para usar o passo a passo desse tutorial sugerimos o uso do [Azure Cloud Shell](
 
 ### Baixar o repositório para seu ambiente
 
-```bat
+```
 git clone https://github.com/the-compass-to-stormy-operations/azure.git
 ```
 
 ou atualizar
 
-```pwsh
+```
 cd azure
 git pull
 ```
