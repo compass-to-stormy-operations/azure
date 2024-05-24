@@ -16,7 +16,7 @@ git clone https://github.com/the-compass-to-stormy-operations/azure.git
 
 ou atualizar
 
-```
+```PowerShell
 cd azure
 git pull
 ```
